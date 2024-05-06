@@ -1,56 +1,20 @@
-# CIDM6330 Spring 2024
+** Progress **
+Barky
+We started with a basic command line application that functioned well but had no data presistency and no ability to interact with a database or create well structured program.  We transformwed this into a SOLID, APP architecture
 
-This repository will contain all supplemental materials and code for CIDM6330 for the Spring 2024 semester.
+Barky Refactor 1
+For this refactor we added and learned about (DRF, ORM, and Repository Pattern): Assignment 5 
+Our goal was to 
+1. Replace the custom data handling (the DatabaseManager module) with the [Django O/RM].  the database we chose was sqlite
+    1. Replace the existing DatabaseManager with the Django ORM.
+    2. Replace the CLI web-based REST API using the Django REST Framework.
+    3. SOLID
+    4. Use [DRF's testing facilities]
+2. Adopt the suggestions from Percival and Gregory regarding the Unit of Work and Respository Pattern and Django: [Appendix D: Repository and Unit of Work Patterns with Django]
 
-## APP Code CIDM 6330 Spring 2024
+Barky Refactor 2
+With this refacoter we focued on the repository patter and units of work.
 
-[Harry Percival and Bob Gregory's Code Repository for the Book](https://github.com/cosmicpython/code.git)
-While the Percival and Gregory Book is older now, it has good concepts in it and can be reviewed for free at [Cosmic Python](https://www.cosmicpython.com/).
+Barky Refactor 3
 
-`git clone --branch chapter_01_domain_model https://github.com/cosmicpython/code.git`
 
-## Course Supplemental Material on Architecture - Spring 2024
-
-The [docs](docs/README.MD) folder contains several files with supplemental and foundational knowledge for the course.
-
-# Components of this Repo:
-
-- [Acme](projects/acme/README.MD) - Acme crew scheduling example. (updated in 2024)
-- [APP](projects/APP/README.MD) - Arhictecture Patterns in Python - Percival and Gregory
-- [APP2023](projects/APP2023/README.MD) - Arhictecture Patterns in Python - Percival and Gregory with some adjustments
-- [Barky](projects/Barky/README.MD) - a derivative of [Dane Hillard's Bark example](https://github.com/daneah/practices-of-the-python-pro), which has been transformed to follow along with Percival and Gregory's material. This is now optional, but still a useful guide.
-- [Barky2024 and Refactors](projects/Barky2024/) - Spring 2024 updates for Barky.
-- [Docs](docs/README.MD) - Course readings are here.
-- [Testing](Testing/README.MD) - Separate materials on testing in Python.
-- [PyTesting](Testing/PyTesting/README.MD) - pytest basics. We will not use PyTest, but it is very popular, so I didn't want to skip it.
-- [MDN Django Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django) - A good overview and tutorial for Django.
-- [Django Girls Tutorial](tutorials/django-girls-tutorial/) - Another good primer on Django.
-
-## Git Crash Course for Begginers
-
-[Good resource](https://gist.github.com/brandon1024/14b5f9fcfd982658d01811ee3045ff1e).
-
-## Visual Studio Code Python Extension
-
-It may become necessary for you to encourage the Python and Pylance extensions on how to find your virtual environment in VSCode.
-
-The following can be added to a 'settings.json' file to accompany your project:
-
-`"python.pythonPath": "/my/project/path/.venv/bin/python",`
-
-## PyPi Packages
-
-PyPi packages used:
-
-- setuptools
-- coverage
-
-## Percival's First Book on TDD
-
-[Test-Driven Development with Python](https://www.obeythetestinggoat.com/)
-
-## Regarding Barky
-
-There are four branches related to Barky that show the progression in Barky in consideration of the design principles we are studying.
-
-You can see these branches with the `git branch` command.
